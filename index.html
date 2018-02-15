@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ankiety</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Ankiety</h1> <span>logo</span>
+    </header>
+
+    <section id="questions">
+
+        <form action="php/form.php" method="post">
+
+            <div class="closed-questions">
+                <label class="item-ask" for="">Pytanie z bazy 1</label>
+                <input type="radio" name="a" value="a">
+                <input type="radio" name="b" value="b">
+                <input type="radio" name="c" value="c">
+
+                <label class="item-ask" for="">Pytanie z bazy 2</label>
+                <input type="radio" name="a" value="a">
+                <input type="radio" name="b" value="b">
+                <input type="radio" name="c" value="c">
+
+                <label class="item-ask" for="">Pytanie z bazy 3</label>
+                <input type="radio" name="a" value="a">
+                <input type="radio" name="b" value="b">
+                <input type="radio" name="c" value="c">
+            </div>
+
+            <div class="closed-questions">
+                <label class="item-ask" for=""> Pytanie z bazy 1</label>
+                <span class="item-rate-answer">od 1 do 10</span>
+
+                <label class="item-ask" for=""> Pytanie z bazy 2</label>
+                <span class="item-rate-answer">od 1 do 10</span>
+
+                <label class="item-ask" for=""> Pytanie z bazy 3</label>
+                <span class="item-rate-answer">od 1 do 10</span>
+
+            </div>
+            
+            <div class="opened-questions">
+                <label class="item-opened-ask" for="">Pytangens</label>
+                <textarea class="item-opened-answer" name="" id="" cols="30" rows="10"></textarea>
+
+                <label class="item-opened-ask" for="">Pytangens</label>
+                <textarea class="item-opened-answer" name="" id="" cols="30" rows="10"></textarea>
+
+                <label class="item-opened-ask" for="">Pytangens</label>
+                <textarea class="item-opened-answer" name="" id="" cols="30" rows="10"></textarea>
+
+                <label class="item-opened-ask" for="">Pytangens</label>
+                <textarea class="item-opened-answer" name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            
+            <input type="submit" value="Ok">
+        </form>
+    </section>
+</body>
+
+</html>
